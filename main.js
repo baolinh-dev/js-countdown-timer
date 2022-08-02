@@ -13,10 +13,13 @@ function countdown() {
     const mins = Math.floor(totalSeconds / 60) % 60;
     const seconds = Math.floor(totalSeconds)% 60; 
 
-    daysEl.innerHTML = days;
-    hoursE1.innerHTML = hours;
-    minsEl.innerHTML = mins; 
-    secondsE1.innerHTML = seconds;
+    daysEl.innerHTML = formatTime(days);
+    hoursE1.innerHTML = formatTime(hours);
+    minsEl.innerHTML = formatTime(mins); 
+    secondsE1.innerHTML = formatTime(seconds);
+} 
+function formatTime(time) {
+    return time < 10 ? (`0${time}`) : time;
 }
 // initial call
 countdown();
