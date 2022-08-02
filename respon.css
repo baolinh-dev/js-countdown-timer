@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    #main { 
+        padding-top: 80%;
+    } 
+    .countdown-app {
+        position: absolute;
+        top: 10rem;
+        transform: translateY(-50%);
+    }
+}
